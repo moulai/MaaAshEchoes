@@ -80,6 +80,699 @@
         {
             "name": "福利-每日烙痕一抽",
             "entry": "福利_每日烙痕一抽"
+        },
+        {
+            "name": "外勤",
+            "entry": "外勤",
+            "option": [
+                "作战关卡"
+            ]
         }
-    ]
+    ],
+    "option": {
+        "作战关卡": {
+            "cases": [
+                {
+                    "name": "R-1",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "物资保障",
+                            "interrupt": [
+                                "外勤_R系列选择类别"
+                            ]
+                        },
+                        "外勤_R系列选择类别": {
+                            "expected": "矿石材料"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "R-1"
+                        }
+                    }
+                },
+                {
+                    "name": "R-2",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "物资保障",
+                            "interrupt": [
+                                "外勤_R系列选择类别"
+                            ]
+                        },
+                        "外勤_R系列选择类别": {
+                            "expected": "矿石材料"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "R-2"
+                        }
+                    }
+                },
+                {
+                    "name": "R-3",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "物资保障",
+                            "interrupt": [
+                                "外勤_R系列选择类别"
+                            ]
+                        },
+                        "外勤_R系列选择类别": {
+                            "expected": "矿石材料"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "R-3"
+                        }
+                    }
+                },
+                {
+                    "name": "R-4",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "物资保障",
+                            "interrupt": [
+                                "外勤_R系列选择类别"
+                            ]
+                        },
+                        "外勤_R系列选择类别": {
+                            "expected": "矿石材料"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "R-4"
+                        }
+                    }
+                },
+                {
+                    "name": "R-5",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "物资保障",
+                            "interrupt": [
+                                "外勤_R系列选择类别"
+                            ]
+                        },
+                        "外勤_R系列选择类别": {
+                            "expected": "矿石材料"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "R-5"
+                        }
+                    }
+                },
+                {
+                    "name": "R-6",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "物资保障",
+                            "interrupt": [
+                                "外勤_R系列选择类别"
+                            ]
+                        },
+                        "外勤_R系列选择类别": {
+                            "expected": "矿石材料"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "R-6"
+                        }
+                    }
+                },
+                {
+                    "name": "R-7",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "物资保障",
+                            "interrupt": [
+                                "外勤_R系列选择类别"
+                            ]
+                        },
+                        "外勤_R系列选择类别": {
+                            "expected": "结晶宝石"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "R-7"
+                        }
+                    }
+                },
+                {
+                    "name": "R-8",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "物资保障",
+                            "interrupt": [
+                                "外勤_R系列选择类别"
+                            ]
+                        },
+                        "外勤_R系列选择类别": {
+                            "expected": "结晶宝石"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "R-8"
+                        }
+                    }
+                },
+                {
+                    "name": "R-9",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "物资保障",
+                            "interrupt": [
+                                "外勤_R系列选择类别"
+                            ]
+                        },
+                        "外勤_R系列选择类别": {
+                            "expected": "结晶宝石"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "R-9"
+                        }
+                    }
+                },
+                {
+                    "name": "R-10",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "物资保障",
+                            "interrupt": [
+                                "外勤_R系列选择类别"
+                            ]
+                        },
+                        "外勤_R系列选择类别": {
+                            "expected": "结晶宝石"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "R-10"
+                        }
+                    }
+                },
+                {
+                    "name": "R-11",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "物资保障",
+                            "interrupt": [
+                                "外勤_R系列选择类别"
+                            ]
+                        },
+                        "外勤_R系列选择类别": {
+                            "expected": "结晶宝石"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "R-11"
+                        }
+                    }
+                },
+                {
+                    "name": "R-12",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "物资保障",
+                            "interrupt": [
+                                "外勤_R系列选择类别"
+                            ]
+                        },
+                        "外勤_R系列选择类别": {
+                            "expected": "结晶宝石"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "R-12"
+                        }
+                    }
+                },
+                {
+                    "name": "R-13",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "物资保障",
+                            "interrupt": [
+                                "外勤_R系列选择类别"
+                            ]
+                        },
+                        "外勤_R系列选择类别": {
+                            "expected": "人造机械"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "R-13"
+                        }
+                    }
+                },
+                {
+                    "name": "R-14",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "物资保障",
+                            "interrupt": [
+                                "外勤_R系列选择类别"
+                            ]
+                        },
+                        "外勤_R系列选择类别": {
+                            "expected": "人造机械"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "R-14"
+                        }
+                    }
+                },
+                {
+                    "name": "R-15",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "物资保障",
+                            "interrupt": [
+                                "外勤_R系列选择类别"
+                            ]
+                        },
+                        "外勤_R系列选择类别": {
+                            "expected": "人造机械"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "R-15"
+                        }
+                    }
+                },
+                {
+                    "name": "R-16",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "物资保障",
+                            "interrupt": [
+                                "外勤_R系列选择类别"
+                            ]
+                        },
+                        "外勤_R系列选择类别": {
+                            "expected": "人造机械"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "R-16"
+                        }
+                    }
+                },
+                {
+                    "name": "R-17",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "物资保障",
+                            "interrupt": [
+                                "外勤_R系列选择类别"
+                            ]
+                        },
+                        "外勤_R系列选择类别": {
+                            "expected": "人造机械"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "R-17"
+                        }
+                    }
+                },
+                {
+                    "name": "R-18",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "物资保障",
+                            "interrupt": [
+                                "外勤_R系列选择类别"
+                            ]
+                        },
+                        "外勤_R系列选择类别": {
+                            "expected": "人造机械"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "R-18"
+                        }
+                    }
+                },
+                {
+                    "name": "M-1",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "自由贸易"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "基础订单"
+                        }
+                    }
+                },
+                {
+                    "name": "M-2",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "自由贸易"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "M-2"
+                        }
+                    }
+                },
+                {
+                    "name": "M-3",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "自由贸易"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "M-3"
+                        }
+                    }
+                },
+                {
+                    "name": "M-4",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "自由贸易"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "M-4"
+                        }
+                    }
+                },
+                {
+                    "name": "M-5",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "自由贸易"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "M-5"
+                        }
+                    }
+                },
+                {
+                    "name": "M-6",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "自由贸易"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "M-6"
+                        }
+                    }
+                },
+                {
+                    "name": "M-7",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "自由贸易"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "M-7"
+                        }
+                    }
+                },
+                {
+                    "name": "M-8",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "自由贸易"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "M-8"
+                        }
+                    }
+                },
+                {
+                    "name": "M-9",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "自由贸易"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "M-9"
+                        }
+                    }
+                },
+                {
+                    "name": "M-10",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "自由贸易"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "M-10"
+                        }
+                    }
+                },
+                {
+                    "name": "E-1",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "显影行动"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "限时隔爆"
+                        }
+                    }
+                },
+                {
+                    "name": "E-2",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "显影行动"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "E-2"
+                        }
+                    }
+                },
+                {
+                    "name": "E-3",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "显影行动"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "E-3"
+                        }
+                    }
+                },
+                {
+                    "name": "E-4",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "显影行动"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "E-4"
+                        }
+                    }
+                },
+                {
+                    "name": "E-5",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "显影行动"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "E-5"
+                        }
+                    }
+                },
+                {
+                    "name": "E-6",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "显影行动"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "E-6"
+                        }
+                    }
+                },
+                {
+                    "name": "E-7",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "显影行动"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "E-7"
+                        }
+                    }
+                },
+                {
+                    "name": "E-8",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "显影行动"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "E-8"
+                        }
+                    }
+                },
+                {
+                    "name": "E-9",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "显影行动"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "E-9"
+                        }
+                    }
+                },
+                {
+                    "name": "E-10",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "显影行动"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "E-10"
+                        }
+                    }
+                },
+                {
+                    "name": "L-1",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "光刻协议"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "L-1"
+                        }
+                    }
+                },
+                {
+                    "name": "L-2",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "光刻协议"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "L-2"
+                        }
+                    }
+                },
+                {
+                    "name": "L-3",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "光刻协议"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "L-3"
+                        }
+                    }
+                },
+                {
+                    "name": "L-4",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "光刻协议"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "L-4"
+                        }
+                    }
+                },
+                {
+                    "name": "L-5",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "光刻协议"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "L-5"
+                        }
+                    }
+                },
+                {
+                    "name": "L-6",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "光刻协议"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "L-6"
+                        }
+                    }
+                },
+                {
+                    "name": "L-7",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "光刻协议"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "L-7"
+                        }
+                    }
+                },
+                {
+                    "name": "L-8",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "光刻协议"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "L-8"
+                        }
+                    }
+                },
+                {
+                    "name": "L-9",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "光刻协议"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "L-9"
+                        }
+                    }
+                },
+                {
+                    "name": "K-1",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "新质领域"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "K-1"
+                        }
+                    }
+                },
+                {
+                    "name": "K-2",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "新质领域"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "K-2"
+                        }
+                    }
+                },
+                {
+                    "name": "K-3",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "新质领域"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "K-3"
+                        }
+                    }
+                },
+                {
+                    "name": "K-4",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "新质领域"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "K-4"
+                        }
+                    }
+                },
+                {
+                    "name": "K-5",
+                    "pipeline_override": {
+                        "外勤_选择外勤类别": {
+                            "expected": "新质领域"
+                        },
+                        "外勤_选择作战关卡": {
+                            "expected": "K-5"
+                        }
+                    }
+                }
+            ]
+        }
+    }
 }

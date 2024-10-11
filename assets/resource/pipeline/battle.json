@@ -1,0 +1,156 @@
+{
+    "外勤": {
+        "next": "外勤_进入外勤作战中心",
+        "interrupt": [
+            "通用_返回主界面"
+        ]
+    },
+    "外勤_进入外勤作战中心": {
+        "recognition": "OCR",
+        "expected": "外勤",
+        "roi": [
+            1120,
+            430,
+            155,
+            125
+        ],
+        "action": "Click",
+        "next": "外勤_选择外勤类别"
+    },
+    "外勤_选择外勤类别": {
+        "recognition": "OCR",
+        "expected": "自由贸易",
+        "action": "Click",
+        "roi": [
+            10,
+            540,
+            1260,
+            180
+        ],
+        "post_wait_freezes": 1000,
+        "next": "外勤_选择作战关卡",
+        "interrupt": [
+            "外勤_向左滑动选择关卡"
+        ]
+    },
+    "外勤_向左滑动选择关卡": {
+        "action": "Swipe",
+        "begin": [
+            1000,
+            430,
+            30,
+            30
+        ],
+        "end": [
+            500,
+            430,
+            30,
+            30
+        ]
+    },
+    "外勤_R系列选择类别": {
+        "recognition": "OCR",
+        "expected": "人造机械",
+        "roi": [
+            937,
+            182,
+            262,
+            270
+        ],
+        "action": "Click"
+    },
+    "外勤_选择作战关卡": {
+        "recognition": "OCR",
+        "expected": "M-10",
+        "index": -1,
+        "action": "Click",
+        "next": "外勤_快速战斗"
+    },
+    "外勤_快速战斗": {
+        "recognition": "OCR",
+        "expected": "快速战斗",
+        "roi": [
+            885,
+            520,
+            390,
+            200
+        ],
+        "action": "Click",
+        "next": [
+            "外勤_快速战斗_最大指定次数",
+            "外勤_不使用体力药"
+        ]
+    },
+    "外勤_不使用体力药": {
+        "recognition": "OCR",
+        "expected": "食物",
+        "roi": [
+            420,
+            80,
+            175,
+            135
+        ],
+        "action": "Click",
+        "target": [
+            590,
+            50,
+            35,
+            35
+        ],
+        "next": "通用_返回主界面"
+    },
+    "外勤_快速战斗_最大指定次数": {
+        "recognition": "TemplateMatch",
+        "template": "外勤_快速战斗指定最大次数__799_251_50_36__749_201_150_136.png",
+        "roi": [
+            749,
+            201,
+            150,
+            136
+        ],
+        "action": "Click",
+        "next": "外勤_确认快速战斗"
+    },
+    "外勤_确认快速战斗": {
+        "recognition": "OCR",
+        "expected": "快速战斗",
+        "roi": [
+            646,
+            537,
+            280,
+            62
+        ],
+        "action": "Click",
+        "next": "外勤_任务完成"
+    },
+    "外勤_任务完成": {
+        "recognition": "OCR",
+        "expected": "任务完成",
+        "roi": [
+            125,
+            30,
+            300,
+            160
+        ],
+        "action": "Click",
+        "target": [
+            90,
+            600,
+            10,
+            10
+        ],
+        "next": "外勤_关闭快速战斗界面"
+    },
+    "外勤_关闭快速战斗界面": {
+        "recognition": "OCR",
+        "expected": "取消",
+        "roi": [
+            358,
+            535,
+            280,
+            65
+        ],
+        "action": "Click",
+        "next": "通用_返回主界面"
+    }
+}
