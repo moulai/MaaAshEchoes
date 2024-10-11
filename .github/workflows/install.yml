@@ -78,7 +78,7 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          name: MaaXXX-win-${{ matrix.arch }}
+          name: MaaAshEchoes-win-${{ matrix.arch }}
           path: "install"
 
   ubuntu:
@@ -110,7 +110,7 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          name: MaaXXX-linux-${{ matrix.arch }}
+          name: MaaAshEchoes-linux-${{ matrix.arch }}
           path: "install"
 
   macos:
@@ -142,7 +142,7 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          name: MaaXXX-macos-${{ matrix.arch }}
+          name: MaaAshEchoes-macos-${{ matrix.arch }}
           path: "install"
 
   android:
@@ -174,7 +174,7 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          name: MaaXXX-android-${{ matrix.arch }}
+          name: MaaAshEchoes-android-${{ matrix.arch }}
           path: "install"
 
   release:
