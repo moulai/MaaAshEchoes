@@ -15,7 +15,7 @@
             150
         ],
         "action": "Click",
-        "next": "奖励_进入日常任务界面"
+        "next": "奖励_日常周常_进入日常任务界面"
     },
     "奖励_日常周常_关闭任务界面": {
         "recognition": "TemplateMatch",
@@ -41,7 +41,7 @@
         "action": "Click",
         "post_wait_freezes": 1000
     },
-    "奖励_进入日常任务界面": {
+    "奖励_日常周常_进入日常任务界面": {
         "recognition": "OCR",
         "expected": "日常",
         "roi": [
@@ -53,7 +53,7 @@
         "action": "Click",
         "next": "奖励_领取日常奖励",
         "timeout": 3000,
-        "on_error": "奖励_进入周常任务界面"
+        "on_error": "奖励_日常周常_进入周常任务界面"
     },
     "奖励_领取日常奖励": {
         "recognition": "OCR",
@@ -66,12 +66,12 @@
         ],
         "action": "Click",
         "post_wait_freezes": 1000,
-        "next": "奖励_进入周常任务界面",
+        "next": "奖励_日常周常_进入周常任务界面",
         "interrupt": [
             "奖励_日常周常_点击屏幕继续"
         ]
     },
-    "奖励_进入周常任务界面": {
+    "奖励_日常周常_进入周常任务界面": {
         "recognition": "OCR",
         "expected": "周常",
         "roi": [

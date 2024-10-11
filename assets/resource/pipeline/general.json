@@ -1,35 +1,4 @@
 {
-    "系统_启动游戏": {
-        "action": "StartApp",
-        "package": "com.tencent.gate",
-        "rate_limit": 3000,
-        "timeout": 3000000,
-        "next": [
-            "通用_确认进入主界面"
-        ],
-        "interrupt": [
-            "启动_更新检测",
-            "启动_点击登录"
-        ]
-    },
-    "系统_关闭游戏": {
-        "action": "StopApp",
-        "package": "com.tencent.gate"
-    },
-    "系统_重启游戏": {
-        "next": "系统_重启游戏_关闭游戏"
-    },
-    "系统_重启游戏_关闭游戏": {
-        "action": "StopApp",
-        "package": "com.tencent.gate",
-        "next": "系统_启动游戏",
-        "post_delay": 2000
-    },
-    "异常_版本更新提示": {
-        "recognition": "OCR",
-        "expected": "版本更新提示",
-        "next": "系统_重启游戏"
-    },
     "通用_点击确定按键": {
         "recognition": "OCR",
         "expected": "确定|确认",
@@ -94,33 +63,5 @@
         ],
         "action": "Click",
         "post_wait_freezes": 1000
-    },
-    "启动_更新检测": {
-        "recognition": "TemplateMatch",
-        "template": "启动_更新检测关闭按钮__1044_136_37_33__994_86_137_133.png",
-        "roi": [
-            994,
-            86,
-            137,
-            133
-        ],
-        "action": "Click"
-    },
-    "启动_点击登录": {
-        "recognition": "OCR",
-        "expected": "点击进入游戏",
-        "action": "Click",
-        "next": [
-            "通用_确认进入主界面"
-        ],
-        "interrupt": [
-            "启动_每日补给",
-            "启动_活动奖励",
-            "启动_活动公告",
-            "通用_点击屏幕继续"
-        ]
-    },
-    "启动_每日补给": {},
-    "启动_活动奖励": {},
-    "启动_活动公告": {}
+    }
 }
