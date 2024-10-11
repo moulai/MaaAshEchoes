@@ -30,7 +30,10 @@
             115
         ],
         "action": "Click",
-        "next": "日常_俱乐部_给成员点赞"
+        "next": "日常_俱乐部_给成员点赞",
+        "interrupt": [
+            "日常_俱乐部_进入成员界面"
+        ]
     },
     "日常_俱乐部_给成员点赞": {
         "recognition": "TemplateMatch",
