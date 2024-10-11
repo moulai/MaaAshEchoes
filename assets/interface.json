@@ -3,14 +3,6 @@
         {
             "name": "安卓端",
             "type": "Adb"
-        },
-        {
-            "name": "桌面端",
-            "type": "Win32",
-            "win32": {
-                "class_regex": ".*",
-                "window_regex": "Visual Studio"
-            }
         }
     ],
     "resource": [
@@ -19,56 +11,36 @@
             "path": [
                 "{PROJECT_DIR}/resource"
             ]
-        },
-        {
-            "name": "B 服",
-            "path": [
-                "{PROJECT_DIR}/resource",
-                "{PROJECT_DIR}/resource_bilibili"
-            ]
         }
     ],
     "task": [
         {
-            "name": "普通任务",
-            "entry": "MyTask1"
+            "name": "开始唤醒",
+            "entry": "系统_启动游戏"
         },
         {
-            "name": "选项任务",
-            "entry": "MyTask2",
-            "option": [
-                "任务选项1"
-            ]
+            "name": "日常-领取好友赠礼",
+            "entry": "日常_好友赠礼"
         },
         {
-            "name": "参数任务",
-            "entry": "MyTask3",
-            "option": [
-                "任务选项1"
-            ],
-            "pipeline_override": {}
+            "name": "日常-俱乐部点赞并领取奖励",
+            "entry": "日常_俱乐部"
+        },
+        {
+            "name": "日常_白荆穹顶收取产物",
+            "entry": "日常_白荆穹顶"
+        },
+        {
+            "name": "福利-购买每日外勤赠礼",
+            "entry": "福利_每日外勤赠礼"
+        },
+        {
+            "name": "奖励-领取日常/周常任务奖励",
+            "entry": "奖励_日常周常"
+        },
+        {
+            "name": "奖励-领取叶脉联结奖励",
+            "entry": "奖励_叶脉联结"
         }
-    ],
-    "option": {
-        "任务选项1": {
-            "cases": [
-                {
-                    "name": "文本1",
-                    "pipeline_override": {
-                        "OcrTask": {
-                            "text": "文本1"
-                        }
-                    }
-                },
-                {
-                    "name": "文本2",
-                    "pipeline_override": {
-                        "OcrTask": {
-                            "text": "文本2"
-                        }
-                    }
-                }
-            ]
-        }
-    }
+    ]
 }
