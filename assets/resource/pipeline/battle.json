@@ -15,6 +15,7 @@
             125
         ],
         "action": "Click",
+        "post_wait_freezes": 500,
         "next": [
             "外勤_选择外勤类别",
             "外勤_进入外勤作战中心"
