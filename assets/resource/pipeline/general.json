@@ -32,16 +32,50 @@
         ],
         "threshold": 0.9
     },
+    "通用_确认进入主界面_ColorMatch": {
+        "recognition": "ColorMatch",
+        "roi": [
+            1160,
+            660,
+            70,
+            30
+        ],
+        "lower": [
+            200,
+            200,
+            200
+        ],
+        "upper": [
+            255,
+            255,
+            255
+        ],
+        "count": 350
+    },
     "通用_返回主界面": {
-        "next": "通用_确认进入主界面",
+        "next": "通用_返回主界面_确认进入主界面_TemplateMatch",
         "interrupt": [
             "通用_点击屏幕继续",
             "通用_点击返回上一层按钮",
             "通用_点击返回主界面按钮",
             "异常_版本更新提示",
-            "奖励_日常周常_关闭任务界面",
             "外勤_关闭快速战斗界面",
-            "外勤_任务完成"
+            "外勤_任务完成",
+            "通用_收起功能菜单"
+        ]
+    },
+    "通用_返回主界面_确认进入主界面_TemplateMatch": {
+        "recognition": "TemplateMatch",
+        "template": "主界面_功能菜单按钮__1132_662_104_32__1082_612_198_108.png",
+        "roi": [
+            1082,
+            612,
+            198,
+            108
+        ],
+        "next": "通用_确认进入主界面_ColorMatch",
+        "interrupt": [
+            "奖励_日常周常_关闭任务界面"
         ]
     },
     "通用_点击返回主界面按钮": {
@@ -54,7 +88,7 @@
             103
         ],
         "action": "Click",
-        "post_wait_freezes": 1000
+        "post_wait_freezes": 500
     },
     "通用_点击返回上一层按钮": {
         "recognition": "TemplateMatch",
@@ -66,6 +100,18 @@
             103
         ],
         "action": "Click",
-        "post_wait_freezes": 1000
+        "post_wait_freezes": 500
+    },
+    "通用_收起功能菜单": {
+        "recognition": "OCR",
+        "expected": "收起",
+        "roi": [
+            1115,
+            610,
+            165,
+            110
+        ],
+        "action": "Click",
+        "post_wait_freezes": 500
     }
 }
