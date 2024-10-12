@@ -27,6 +27,12 @@
             130
         ],
         "action": "Click",
+        "target_offset": [
+            0,
+            -40,
+            0,
+            0
+        ],
         "next": "日常_白荆穹顶_全部收取",
         "interrupt": [
             "通用_点击确定按键"
