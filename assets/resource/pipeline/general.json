@@ -88,7 +88,7 @@
             103
         ],
         "action": "Click",
-        "post_wait_freezes": 500
+        "post_wait_freezes": 200
     },
     "通用_点击返回上一层按钮": {
         "recognition": "TemplateMatch",
@@ -100,7 +100,7 @@
             103
         ],
         "action": "Click",
-        "post_wait_freezes": 500
+        "post_wait_freezes": 200
     },
     "通用_收起功能菜单": {
         "recognition": "OCR",
@@ -112,6 +112,6 @@
             110
         ],
         "action": "Click",
-        "post_wait_freezes": 500
+        "post_wait_freezes": 200
     }
 }

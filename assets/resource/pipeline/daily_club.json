@@ -15,7 +15,7 @@
             95
         ],
         "action": "Click",
-        "post_wait_freezes": 500,
+        "post_wait_freezes": 200,
         "next": [
             "日常_俱乐部_进入成员界面",
             "日常_俱乐部_进入俱乐部界面"

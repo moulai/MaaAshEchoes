@@ -15,7 +15,7 @@
             110
         ],
         "action": "Click",
-        "post_wait_freezes": 1000,
+        "post_wait_freezes": 500,
         "next": [
             "日常_午后茶憩_进入午后茶憩界面",
             "日常_午后茶憩_打开功能菜单"
@@ -68,7 +68,7 @@
             147
         ],
         "action": "Click",
-        "post_wait_freezes": 1000,
+        "post_wait_freezes": 500,
         "next": [
             "日常_午后茶憩_免费额度没用光",
             "通用_点击返回上一层按钮"
