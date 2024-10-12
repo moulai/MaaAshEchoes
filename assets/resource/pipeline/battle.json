@@ -124,6 +124,7 @@
         "next": "外勤_任务完成"
     },
     "外勤_任务完成": {
+        "pre_wait_freezes": 1000,
         "recognition": "OCR",
         "expected": "任务完成",
         "roi": [
