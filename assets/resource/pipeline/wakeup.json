@@ -45,7 +45,8 @@
             "启动_领取活动奖励",
             "启动_活动奖励领取完毕",
             "启动_活动公告"
-        ]
+        ],
+        "timeout": 120000
     },
     "启动_每日补给": {
         "recognition": "TemplateMatch",
@@ -56,7 +57,8 @@
             139,
             139
         ],
-        "action": "Click"
+        "action": "Click",
+        "post_wait_freezes": 1000
     },
     "启动_领取活动奖励": {
         "recognition": "OCR",
@@ -68,7 +70,8 @@
             55
         ],
         "index": -1,
-        "action": "Click"
+        "action": "Click",
+        "post_wait_freezes": 1000
     },
     "启动_活动奖励领取完毕": {
         "recognition": "OCR",
@@ -80,6 +83,7 @@
             55
         ],
         "action": "Click",
+        "post_wait_freezes": 1000,
         "target_offset": [
             0,
             80,
@@ -96,6 +100,7 @@
             260,
             180
         ],
-        "action": "Click"
+        "action": "Click",
+        "post_wait_freezes": 1000
     }
 }
