@@ -123,7 +123,7 @@
     },
     "日常_午后茶憩_选择茶憩角色": {
         "recognition": "TemplateMatch",
-        "template": "edit\\午后茶憩_茶憩角色1.png",
+        "template": "edit/午后茶憩_茶憩角色1.png",
         "roi": [
             415,
             220,
