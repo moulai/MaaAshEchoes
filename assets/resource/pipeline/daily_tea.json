@@ -68,13 +68,31 @@
             147
         ],
         "action": "Click",
-        "post_wait_freezes": 500,
+        "post_wait_freezes": 200,
+        "next": "日常_午后茶憩_选择第一个默认角色",
+        "timeout": 10000,
+        "on_error": "日常_午后茶憩_退出茶憩"
+    },
+    "日常_午后茶憩_选择第一个默认角色": {
+        "recognition": "TemplateMatch",
+        "template": "午后茶憩_茶憩选择界面定位标识__426_153_121_26__376_103_221_126.png",
+        "roi": [
+            375,
+            105,
+            220,
+            125
+        ],
+        "action": "Click",
+        "target_offset": [
+            55,
+            120,
+            -100,
+            0
+        ],
         "next": [
             "日常_午后茶憩_免费额度没用光",
             "通用_点击返回上一层按钮"
-        ],
-        "on_error": "日常_午后茶憩_退出茶憩",
-        "timeout": 3000
+        ]
     },
     "日常_午后茶憩_免费额度没用光": {
         "recognition": "TemplateMatch",
@@ -87,31 +105,25 @@
         ],
         "inverse": true,
         "next": "日常_午后茶憩_选择茶憩角色",
-        "interrupt": [
-            "日常_午后茶憩_茶憩选择翻页"
-        ],
-        "on_error": "日常_午后茶憩_退出茶憩",
-        "timeout": 10000
+        "interrupt": "日常_午后茶憩_茶憩选择翻页_按钮",
+        "timeout": 10000,
+        "on_error": "日常_午后茶憩_退出茶憩"
     },
-    "日常_午后茶憩_茶憩选择翻页": {
-        "action": "Swipe",
-        "begin": [
-            860,
-            370,
-            10,
-            10
+    "日常_午后茶憩_茶憩选择翻页_按钮": {
+        "recognition": "TemplateMatch",
+        "template": "午后茶憩_茶憩选择翻页按钮__1007_382_29_34__957_332_129_134.png",
+        "roi": [
+            957,
+            332,
+            129,
+            134
         ],
-        "end": [
-            360,
-            370,
-            10,
-            10
-        ],
-        "duration": 200
+        "action": "Click",
+        "post_wait_freezes": 200
     },
     "日常_午后茶憩_选择茶憩角色": {
         "recognition": "TemplateMatch",
-        "template": "edit/午后茶憩_茶憩角色1.png",
+        "template": "edit\\午后茶憩_茶憩角色1.png",
         "roi": [
             415,
             220,
@@ -120,9 +132,9 @@
         ],
         "threshold": 0.9,
         "action": "Click",
-        "next": "日常_午后茶憩_开始喝茶"
+        "next": "日常_午后茶憩_检测喝茶按钮"
     },
-    "日常_午后茶憩_开始喝茶": {
+    "日常_午后茶憩_检测喝茶按钮": {
         "recognition": "TemplateMatch",
         "template": "午后茶憩_开始喝茶__1032_538_49_35__982_488_149_135.png",
         "roi": [
@@ -131,13 +143,48 @@
             149,
             135
         ],
+        "next": [
+            "日常_午后茶憩_喝茶按钮灰色",
+            "日常_午后茶憩_喝茶按钮点亮"
+        ]
+    },
+    "日常_午后茶憩_喝茶按钮灰色": {
+        "recognition": "ColorMatch",
+        "roi": "日常_午后茶憩_检测喝茶按钮",
+        "lower": [
+            100,
+            100,
+            100
+        ],
+        "upper": [
+            150,
+            150,
+            150
+        ],
+        "count": 1400,
+        "next": "通用_点击返回上一层按钮"
+    },
+    "日常_午后茶憩_喝茶按钮点亮": {
+        "recognition": "ColorMatch",
+        "roi": "日常_午后茶憩_检测喝茶按钮",
+        "lower": [
+            220,
+            150,
+            80
+        ],
+        "upper": [
+            255,
+            255,
+            255
+        ],
+        "count": 1400,
         "action": "Click",
         "next": "日常_午后茶憩_再来一杯",
         "interrupt": [
             "日常_午后茶憩_加速对话"
         ],
-        "on_error": "日常_午后茶憩_退出茶憩",
-        "timeout": 10000
+        "timeout": 10000,
+        "on_error": "日常_午后茶憩_退出茶憩"
     },
     "日常_午后茶憩_加速对话": {
         "recognition": "TemplateMatch",
@@ -160,7 +207,9 @@
             125
         ],
         "action": "Click",
-        "next": "日常_午后茶憩_结束茶憩"
+        "next": "日常_午后茶憩_结束茶憩",
+        "timeout": 10000,
+        "on_error": "日常_午后茶憩_退出茶憩"
     },
     "日常_午后茶憩_结束茶憩": {
         "recognition": "OCR",
