@@ -3,7 +3,7 @@
         "action": "StartApp",
         "package": "com.tencent.gate",
         "rate_limit": 3000,
-        "timeout": 3000000,
+        "timeout": 600000,
         "next": [
             "通用_确认进入主界面"
         ],
