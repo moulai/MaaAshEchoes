@@ -15,7 +15,7 @@
             91
         ],
         "action": "Click",
-        "post_wait_freezes": 200,
+        "post_wait_freezes": 100,
         "next": [
             "日常_好友赠礼_进入好友列表",
             "日常_好友赠礼_进入好友界面"

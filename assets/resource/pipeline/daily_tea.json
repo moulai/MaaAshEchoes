@@ -15,7 +15,7 @@
             110
         ],
         "action": "Click",
-        "post_wait_freezes": 500,
+        "post_wait_freezes": 200,
         "next": [
             "日常_午后茶憩_进入午后茶憩界面",
             "日常_午后茶憩_打开功能菜单"
@@ -68,7 +68,7 @@
             147
         ],
         "action": "Click",
-        "post_wait_freezes": 200,
+        "post_wait_freezes": 100,
         "next": "日常_午后茶憩_选择第一个默认角色",
         "timeout": 10000,
         "on_error": "日常_午后茶憩_退出茶憩"
@@ -119,7 +119,7 @@
             134
         ],
         "action": "Click",
-        "post_wait_freezes": 200
+        "post_wait_freezes": 100
     },
     "日常_午后茶憩_选择茶憩角色": {
         "recognition": "TemplateMatch",

@@ -15,7 +15,7 @@
             125
         ],
         "action": "Click",
-        "post_wait_freezes": 200,
+        "post_wait_freezes": 100,
         "next": [
             "外勤_选择外勤类别",
             "外勤_进入外勤作战中心"
@@ -31,7 +31,7 @@
             1260,
             180
         ],
-        "post_wait_freezes": 500,
+        "post_wait_freezes": 200,
         "next": "外勤_选择作战关卡",
         "interrupt": [
             "外勤_向左滑动选择关卡"
@@ -125,7 +125,7 @@
             62
         ],
         "action": "Click",
-        "post_wait_freezes": 500,
+        "post_wait_freezes": 200,
         "next": "外勤_任务完成"
     },
     "外勤_任务完成": {

@@ -15,7 +15,7 @@
             110
         ],
         "action": "Click",
-        "post_wait_freezes": 200,
+        "post_wait_freezes": 100,
         "next": [
             "奖励_叶脉联结_进入叶脉联结界面",
             "奖励_叶脉联结_进入活动中心"
