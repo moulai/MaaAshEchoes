@@ -69,9 +69,10 @@
         ],
         "action": "Click",
         "post_wait_freezes": 100,
-        "next": "日常_午后茶憩_选择第一个默认角色",
-        "timeout": 10000,
-        "on_error": "日常_午后茶憩_退出茶憩"
+        "next": [
+            "日常_午后茶憩_选择第一个默认角色",
+            "日常_午后茶憩_退出茶憩"
+        ]
     },
     "日常_午后茶憩_选择第一个默认角色": {
         "recognition": "TemplateMatch",
@@ -104,10 +105,11 @@
             152
         ],
         "inverse": true,
-        "next": "日常_午后茶憩_选择茶憩角色",
-        "interrupt": "日常_午后茶憩_茶憩选择翻页_按钮",
-        "timeout": 10000,
-        "on_error": "日常_午后茶憩_退出茶憩"
+        "next": [
+            "日常_午后茶憩_选择茶憩角色",
+            "日常_午后茶憩_茶憩选择翻页_按钮_未检测到"
+        ],
+        "interrupt": "日常_午后茶憩_茶憩选择翻页_按钮"
     },
     "日常_午后茶憩_茶憩选择翻页_按钮": {
         "recognition": "TemplateMatch",
@@ -120,6 +122,18 @@
         ],
         "action": "Click",
         "post_wait_freezes": 100
+    },
+    "日常_午后茶憩_茶憩选择翻页_按钮_未检测到": {
+        "recognition": "TemplateMatch",
+        "template": "午后茶憩/午后茶憩_茶憩选择翻页按钮__1007_382_29_34__957_332_129_134.png",
+        "roi": [
+            957,
+            332,
+            129,
+            134
+        ],
+        "inverse": true,
+        "next": "日常_午后茶憩_退出茶憩"
     },
     "日常_午后茶憩_选择茶憩角色": {
         "recognition": "TemplateMatch",
