@@ -5,11 +5,11 @@
         "rate_limit": 3000,
         "timeout": 600000,
         "next": [
-            "通用_确认进入主界面"
+            "通用_确认进入主界面",
+            "启动_更新检测",
+            "启动_点击登录"
         ],
         "interrupt": [
-            "启动_更新检测",
-            "启动_点击登录",
             "通用_点击屏幕继续",
             "通用_点击返回上一层按钮",
             "通用_点击返回主界面按钮",
@@ -29,7 +29,8 @@
             137,
             133
         ],
-        "action": "Click"
+        "action": "Click",
+        "next": "启动_点击登录"
     },
     "启动_点击登录": {
         "recognition": "OCR",
@@ -102,8 +103,7 @@
             260,
             180
         ],
-        "action": "Click",
-        "post_wait_freezes": 1000
+        "action": "Click"
     },
     "启动_获得新徽章": {
         "recognition": "OCR",
@@ -114,7 +114,6 @@
             281,
             140
         ],
-        "action": "Click",
-        "post_wait_freezes": 1000
+        "action": "Click"
     }
 }
