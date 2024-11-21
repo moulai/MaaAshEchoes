@@ -58,7 +58,8 @@
             60
         ],
         "threshold": 0.9,
-        "action": "Click"
+        "action": "Click",
+        "next": "周常_拟合回归_作战开始"
     },
     "周常_拟合回归_作战开始": {
         "recognition": "OCR",
@@ -81,6 +82,7 @@
             215,
             140
         ],
+        "pre_wait_freezes": 200,
         "action": "Click",
         "next": "周常_拟合回归_作战完成",
         "timeout": 600000,
