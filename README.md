@@ -1,129 +1,240 @@
 <!-- markdownlint-disable MD033 MD041 -->
+
 <p align="center">
-  <img alt="LOGO" src="https://cdn.jsdelivr.net/gh/MaaAssistantArknights/design@main/logo/maa-logo_512x512.png" width="256" height="256" />
+  <img alt="LOGO" src="assets/resource/image/logo.png" width="180" height="180" />
 </p>
 
 <div align="center">
 
-# MaaPracticeBoilerplate
+# MaaAshEchoes
+
+MaaAshEchoes，基于全新架构的 白荆回廊 小助手。图像技术 + 模拟控制，解放双手！
+
+本项目由 **[MaaFramework](https://github.com/MaaXYZ/MaaFramework)** 强力驱动！
+
+本项目使用 **[MFAWPF](https://github.com/SweetSmellFox/MFAWPF)** 作为 GUI 界面！（仅限 win-x86_64 用户可用）
 
 </div>
 
-本仓库为 [MaaFramework](https://github.com/MaaXYZ/MaaFramework) 所提供的项目模板，开发者可基于此模板直接创建自己的 MaaXXX 项目。
+---
 
-> **MaaFramework** 是基于图像识别技术、运用 [MAA](https://github.com/MaaAssistantArknights/MaaAssistantArknights) 开发经验去芜存菁、完全重写的新一代自动化黑盒测试框架。
-> 低代码的同时仍拥有高扩展性，旨在打造一款丰富、领先、且实用的开源库，助力开发者轻松编写出更好的黑盒测试程序，并推广普及。
+## 主要功能（任务说明）
 
-## 即刻开始
+- **开始唤醒**：启动并进入游戏，请确保**已经登录账号**。
+- **清体力-同调者培养**：指定同调者、技能、目标等级，自动用体力进行同调者培养。（不使用体力药）
+- **清体力-外勤**：指定关卡名称，自动用体力进行外勤作战。（不使用体力药）
+- **日常-领取好友赠礼**：领取好友赠礼。
+- **日常-俱乐部点赞并领取奖励**：通过给俱乐部成员点赞的方式完成俱乐部每日任务，并领取奖励。
+- **日常-午后茶憩-打开茶憩界面**：打开“午后茶憩”界面，注意，**若要进行茶憩，此项任务必须勾选**。
+- **日常-午后茶憩-茶憩角色 1**：与指定的第一个角色进行茶憩互动，**请创建或修改“resource/image/edit”文件夹下的“午后茶憩\_茶憩角色 1.png”以指定角色**，详见下方的“使用说明”。
+- **日常-午后茶憩-茶憩角色 2**：同上，通过**创建或修改“resource/image/edit/午后茶憩\_茶憩角色 2.png”**以指定第二个角色。
+- **日常-午后茶憩-茶憩角色 3**：同上，通过**创建或修改“resource/image/edit/午后茶憩\_茶憩角色 3.png”**以指定第三个角色。
+- **日常-午后茶憩-退出茶憩界面**：退出“午后茶憩”界面并返回主界面，注意，**若要进行茶憩，此项任务必须勾选**，否则可能无法正常返回主界面。
+- **日常-白荆穹顶收取产物**：收取白荆穹顶的生产资源。
+- **周常-打一次拟合回归**：执行一次拟合回归任务，支持选择队伍。
+- **奖励-领取日常/周常任务奖励**：领取日常和周常任务奖励。
+- **奖励-领取叶脉联结奖励**：领取叶脉联结中的任务点数和奖励。
+- **福利-购买每日外勤赠礼**：购买有猫零售中每日一次的免费外勤赠礼。
+- **福利-每日烙痕一抽**：进行每日一次的免费烙痕抽取。
+- **福利-邮箱签收**：签收游戏邮件中的物品。
+- **关闭游戏**：退出游戏。
 
-- [⭐ 开发思路](https://github.com/MaaXYZ/MaaFramework/blob/main/docs/zh_cn/0.1-%E5%BC%80%E5%8F%91%E6%80%9D%E8%B7%AF.md)
-- [📄 资源准备](https://github.com/MaaXYZ/MaaFramework/blob/main/docs/zh_cn/1.1-%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B.md)
-- [🎞️ 视频教程](https://www.bilibili.com/video/BV1yr421E7MW)
+还有想要的功能？欢迎在 [Issue](https://github.com/moulai/MaaAshEchoes/issues) 中提出建议！请在 issue 标题中以 `[功能建议]` 开头。
 
-## 如何开发
+## 下载及安装说明
 
-0. 使用右上角 `Use this template` - `Create a new repository` 来基于本模板创建您自己的项目。
+### 下载地址
 
-1. 完整克隆本项目及子项目（地址请修改为您基于本模板创建的新项目地址）。
+前往 [Releases 页面](https://github.com/moulai/MaaAshEchoes/releases) 下载适合您设备的版本。
 
-    ```bash
-    git clone --recursive https://github.com/MaaXYZ/MaaPracticeBoilerplate.git
-    ```
+### Windows 用户
 
-    **请注意，一定要完整克隆子项目，不要漏了 `--recursive`，也不要下载 zip 包！** 这步未正确操作会导致所有 OCR（文字识别）失败！
+Windows 用户可以通过以下简单步骤安装和使用：
 
-2. 下载 MaaFramework 的 [Release 包](https://github.com/MaaXYZ/MaaFramework/releases)，解压到 `deps` 文件夹中。
+1. 下载 `MaaAshEchoes-win-x86_64-vXXX.zip`。
+2. 解压缩文件到任意位置。
+3. 双击运行 `MaaAshEchoes.exe` 即可启动程序，享受便捷的图形化界面操作！
 
-3. 配置资源文件。
+**注意**：
 
-    ```bash
-    python ./configure.py
-    ```
+- 如果您的设备是 ARM 架构（极为罕见），请下载 `MaaAshEchoes-win-aarch64-vXXX.zip`，解压后运行 MaaPiCli.exe 即可。默认情况下，请优先选择 x86_64 版本。
 
-4. 按需求修改 `assets` 中的资源文件，请参考 MaaFramework 相关文档。
+### macOS 用户
 
-    - 可使用 [MaaDebugger](https://github.com/MaaXYZ/MaaDebugger) 进行调试；
-    - 也可以在本地安装后测试：
+如果您使用的是 macOS，请根据您的设备处理器类型选择合适的版本：
 
-        1. 执行安装脚本
+- 使用 Intel 处理器，请下载 `MaaAshEchoes-macos-x86_64-vXXX.zip`。
+- 使用 M1、M2 等 ARM 处理器，请下载 `MaaAshEchoes-macos-aarch64-vXXX.zip`。
 
-            ```bash
-            python ./install.py
-            ```
+下载后，按照以下步骤运行：
 
-        2. 运行 `install/MaaPiCli.exe`
+```bash
+chmod a+x MaaPiCli
+./MaaPiCli
+```
 
-5. 完成开发工作后，上传您的代码并发布版本。
+### Linux 用户
 
-    ```bash
-    # 配置 git 信息（仅第一次需要，后续不用再配置）
-    git config user.name "您的 GitHub 昵称"
-    git config user.email "您的 GitHub 邮箱"
-    
-    # 提交修改
-    git add .
-    git commit -m "XX 新功能"
-    git push origin HEAD -u
-    ```
+~~用 Linux 的大佬应该不需要我教~~
 
-6. 发布您的版本
+### 必要运行库
 
-    需要先修改仓库设置 `Settings` - `Actions` - `General` - `Read and write permissions` - `Save`
+若运行时遇到错误提示，例如 “应用程序错误”，可能是缺少运行库。请安装以下组件：
 
-    ```bash
-    # CI 检测到 tag 会自动进行发版
-    git tag v1.0.0
-    git push origin v1.0.0
-    ```
+- [VC++运行时库 (vc_redist)](https://aka.ms/vs/17/release/vc_redist.x64.exe)
+- [.NET 8 SDK 或运行时](https://dotnet.microsoft.com/zh-cn/download/dotnet/8.0)
 
-## 生态共建
+## 使用说明
 
-MAA 正计划建设为一类项目，而非舟的单一软件。
+### 使用前说明
 
-若您的项目依赖于 MaaFramework，我们欢迎您将它命名为 MaaXXX, MXA, MAX 等等。当然，这是许可而不是限制，您也可以自由选择其他与 MAA 无关的名字，完全取决于您自己的想法！
+在使用工具前完成以下工作：
 
-同时，我们也非常欢迎您提出 PR，在 [最佳实践列表](https://github.com/MaaXYZ/MaaFramework#%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5) 中添加上您的项目！
+- 确保游戏可以在模拟器上流畅运行，没有严重的卡顿和延迟。
+- 完成所有游戏资源的下载，并登录好账号。
+- 完成必要运行库的下载安装：
+  [VC++运行时库 (vc_redist)](https://aka.ms/vs/17/release/vc_redist.x64.exe)
+  [.NET 8 SDK 或运行时](https://dotnet.microsoft.com/zh-cn/download/dotnet/8.0)
 
-## FAQ
+### 模拟器设置要求
 
-### 1. 我是第一次使用 Python，在命令行输入 `python ./configure.py` 或 `python -m pip install MaaFW` 之后没有反应？没有报错，也没有提示成功，什么都没有
+1. **分辨率要求**：使用 **16:9 分辨率**，体检设置为 **1280×720**。  
+   经测试，**2560×1440** 分辨率下也能正常运行。
+   若出现识别问题，请优先调整分辨率为 1280×720 后重试。
 
-Win10 或者 Win11 系统自带了一份 "Python"，但它其实只是一个安装器，是没法用的。  
-你需要做的是关闭它或者删除它的环境变量，然后自己去 Python 官网下载并安装一份 Python。  
-[参考方法](https://www.bilibili.com/read/cv24692025/)
+2. **图形质量**：一般对运行没有影响。如果修改分辨率后识别问题仍然存在，请提 [Issue](https://github.com/moulai/MaaAshEchoes/issues)。
 
-### 2. 我输入 `python ./configure.py` 后报错：`Please clone this repository completely, don’t miss "--recursive", and don’t download the zip package!`
+3. **ADB 调试**：请确保已经打开模拟器的 ADB 调试选项。
 
-![项目不完整1](https://github.com/user-attachments/assets/e1f697c0-e5b6-4853-8664-a358df7327a8)
+4. **其它设置**：请确保关闭后台挂机时保活运行。
 
-**请仔细阅读文档！！！**  
-就是你现在正在看的本篇文档，就在上面，“如何开发”里的第一条，都已经用粗体标出来了，再问我要骂人了！
+### 程序运行注意事项
 
-### 3. 使用 MaaDebugger 或 MaaPicli 时弹窗报错，应用程序错误：应用程序无法正常启动
+1. **任务执行顺序**：
+   - 请合理调整任务顺序，例如，建议将“领取奖励”相关的任务放在流程的最后。
+   - 如果不确定任务执行顺序，请保持默认的执行顺序，并勾选您需要的任务。
+   
+2. **茶憩任务特别说明（重要）**：
 
-![缺少运行库](https://github.com/user-attachments/assets/942df84b-f47d-4bb5-98b5-ab5d44bc7c2a)
+   - 茶憩任务的执行必须完整包含以下步骤：  
+     **打开茶憩界面** → **茶憩角色 1/2/3** → **退出茶憩界面**。  
+     若缺少“打开茶憩界面”或“退出茶憩界面”步骤，可能导致无法正常返回主界面。
 
-一般是电脑缺少某些运行库，请安装一下 [vc_redist](https://aka.ms/vs/17/release/vc_redist.x64.exe) 。
+   - **茶憩角色设置（图片素材准备）**：
 
-### 4. 我在这个仓库里提了 Issue 很久没人回复
+     1. 茶憩任务中，通过创建或修改头像图片的方式设置角色，任务“茶憩角色 1/2/3”分别对应的图片文件如下：
 
-这里是《项目模板》仓库，它仅仅是一个模板，一般很少会修改，开发者也较少关注。  
-在此仓库请仅提问模板相关问题，其他问题最好前往对应的仓库提出，如果有 log，最好也带上它（`debug/maa.log` 文件）
+        - `resource/image/edit/午后茶憩_茶憩角色1.png`
+        - `resource/image/edit/午后茶憩_茶憩角色2.png`
+        - `resource/image/edit/午后茶憩_茶憩角色3.png`  
+          请参考 `resource/image/edit/午后茶憩_茶憩角色.png` 创建或修改上述图片文件，**文件名必须完全一致**。
 
-- MaaFW 本身及 MaaPiCli 的问题：[MaaFramework/issues](https://github.com/MaaXYZ/MaaFramework/issues)
-- MaaDebugger 的问题：[MaaDebugger/issues](https://github.com/MaaXYZ/MaaDebugger/issues)
-- 不知道算是哪里的、其他疑问等：[讨论区](https://github.com/orgs/MaaXYZ/discussions)
+     2. **图片要求**：
 
-### 5. OCR 文字识别一直没有识别结果，报错 "Failed to load det or rec", "ocrer_ is null"
+        - 使用 **无损原图缩放到 720p** 后裁剪茶憩角色选择页面的角色头像中心区域。
+        - 若使用安卓模拟器，务必使用模拟器自带截图功能，不可直接对模拟器窗口截图。
 
-你不但没有仔细阅读文档，还无视了前面步骤的报错。我不想解释了，请再把本文档仔细阅读一遍！
+     3. **推荐工具**：  
+        除非您完全了解 MaaFramework 的图片处理机制，否则请使用以下推荐工具获取截图：
+
+        - **GUI 自带截图工具**  
+          使用方式：
+          - 点击 GUI 主界面任务列表上方的“修改任务”按钮（一个编辑图标）。
+          - 在任务编辑器右上角点击“裁剪图片”按钮（一个图片图标）。
+          - 在弹出的图片浏览器中截图并保存。
+        - [MFA ImageCropper](https://github.com/MaaXYZ/MaaFramework/tree/main/tools/ImageCropper)
+        - [MFATools](https://github.com/SweetSmellFox/MFATools)
+
+     4. **头像截取要求**：
+        - 截取头像中心部分即可，**不要包含头像框**。
+
+## 常见问题
+
+### 1. 程序启动时报“应用程序错误”或无法运行
+
+**原因**：缺少必要的运行时库。  
+**解决方法**：请安装以下运行时库后重试：
+
+- [VC++运行时库 (vc_redist)](https://aka.ms/vs/17/release/vc_redist.x64.exe)
+- [.NET 8 SDK 或运行时](https://dotnet.microsoft.com/zh-cn/download/dotnet/8.0)
+
+### 2. 茶憩任务运行异常，无法正常返回主界面
+
+**原因**：未完整设置茶憩任务流程。  
+**解决方法**：请确保茶憩任务包含以下完整步骤：
+
+- **打开茶憩界面** → **茶憩角色 1/2/3** → **退出茶憩界面**。  
+  若任务未按顺序或缺少步骤，可能会导致流程中断。
+
+### 3. 茶憩任务运行异常，无法正确选择想要的角色
+
+**原因**：图片素材设置错误。
+**解决方法**：请确保按照“茶憩任务特别说明”中的要求设置角色图片素材，确保文件名正确，并使用推荐工具进行截图。
+
+### 4. 识别错误或程序无法正确执行任务
+
+**原因**：一般是因为分辨率或图片素材不符合要求。  
+**解决方法**：确保模拟器分辨率设置为 **16:9（推荐 1280×720）**。
+
+### 5. 模拟器运行缓慢或卡顿
+
+**原因**：设备性能或模拟器设置问题。  
+**解决方法**：
+
+- 确保游戏在模拟器上流畅运行，并完成资源加载。
+- 检查模拟器的显卡模式，关闭其他后台程序释放资源。
+
+### 6. 无法找到问题的解决方案
+
+- 请附上以下信息提交 [Issue](https://github.com/moulai/MaaAshEchoes/issues)：  
+  **日志文件**：位于 `debug/maa.log`。  
+  **截图**：请包含任务出错时的界面截图和问题描述。
+
+## 已知问题
+
+### 特定界面启动任务问题
+
+**问题**：目前如果在**茶憩界面**、白荆穹顶界面或**战斗进行中界面**启动小助手，任务可能无法正常执行（无法正常返回主界面）。  
+**解决方法**：请手动返回主界面后重试。
+
+## 反馈
+
+### 问题反馈
+
+如果在使用过程中遇到问题，欢迎提交 [Issue](https://github.com/moulai/MaaAshEchoes/issues)。反馈时请尽量提供以下信息：
+
+- 日志文件（位于 `debug/maa.log`）。
+- 问题发生时的模拟器界面截图。
+- 简要描述问题出现的情况。
+
+## 软件声明
+
+- 本软件免费开源，仅供学习和交流使用。
+- 本项目基于 [MaaFramework](https://github.com/MaaXYZ/MaaFramework) 构建，开发者对框架功能进行了进一步扩展。
+- **使用须知**：
+  - 本软件仅通过游戏提供的用户界面与游戏程序进行交互，不会读取或修改游戏的文件或代码。
+  - 任何因使用本软件产生的问题或后果均与本软件及开发者团队无关。
+  - 任何商家利用本软件提供代练等商业服务所产生的任何问题或后果，与本软件及开发者团队无关。
+
+下载并使用本软件即表示您已阅读并同意上述声明。
+
+## 开发者相关
+
+### 开发文档
+
+- [MaaFramework 开发文档](https://github.com/MaaXYZ/MaaFramework/blob/main/docs/zh_cn/1.1-%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B.md)：快速上手指南。
+- [Pipeline 流水线协议](https://github.com/MaaXYZ/MaaFramework/blob/main/docs/zh_cn/3.1-%E4%BB%BB%E5%8A%A1%E6%B5%81%E6%B0%B4%E7%BA%BF%E5%8D%8F%E8%AE%AE.md)：任务编排机制的详细说明。
+- 更多文档请参考 [MaaFramework 主仓库](https://github.com/MaaXYZ/MaaFramework)。
 
 ## 鸣谢
 
 本项目由 **[MaaFramework](https://github.com/MaaXYZ/MaaFramework)** 强力驱动！
 
-感谢以下开发者对本项目作出的贡献（下面链接改成你自己的项目地址）:
+本项目使用 **[MFAWPF](https://github.com/SweetSmellFox/MFAWPF)** 作为 GUI 界面！
 
-<a href="https://github.com/MaaXYZ/MaaFramework/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=MaaXYZ/MaaFramework&max=1000" />
+感谢以下开发者对本项目作出的贡献:
+
+<a href="https://github.com/moulai/MaaAshEchoes/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=moulai/MaaAshEchoes&max=1000" />
 </a>
+
