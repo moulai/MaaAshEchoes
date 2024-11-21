@@ -19,6 +19,15 @@
             "entry": "启动_进入游戏"
         },
         {
+            "name": "同调者培养",
+            "entry": "同调者培养",
+            "option": [
+                "培养同调者",
+                "升级技能",
+                "目标等级"
+            ]
+        },
+        {
             "name": "外勤",
             "entry": "外勤",
             "option": [
@@ -98,6 +107,666 @@
         }
     ],
     "option": {
+        "培养同调者": {
+            "cases": [
+                {
+                    "name": "老板",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "老板"
+                        }
+                    }
+                },
+                {
+                    "name": "Sweeper-EX",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "Sweeper-EX|Sweeper|sweeper"
+                        }
+                    }
+                },
+                {
+                    "name": "豹富",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "豹富|豹"
+                        }
+                    }
+                },
+                {
+                    "name": "田偌",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "田偌"
+                        }
+                    }
+                },
+                {
+                    "name": "艾摩诃",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "艾摩诃"
+                        }
+                    }
+                },
+                {
+                    "name": "元桃桃",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "元桃桃"
+                        }
+                    }
+                },
+                {
+                    "name": "霍冉",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "霍冉"
+                        }
+                    }
+                },
+                {
+                    "name": "狄砚",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "狄砚"
+                        }
+                    }
+                },
+                {
+                    "name": "刘兄",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "刘兄"
+                        }
+                    }
+                },
+                {
+                    "name": "马尔斯",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "马尔斯"
+                        }
+                    }
+                },
+                {
+                    "name": "长谣",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "长谣"
+                        }
+                    }
+                },
+                {
+                    "name": "唐路遥",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "唐路遥"
+                        }
+                    }
+                },
+                {
+                    "name": "焰响",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "焰响"
+                        }
+                    }
+                },
+                {
+                    "name": "赫九逸",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "赫九逸"
+                        }
+                    }
+                },
+                {
+                    "name": "莉缇亚",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "莉缇亚"
+                        }
+                    }
+                },
+                {
+                    "name": "吉娜",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "吉娜"
+                        }
+                    }
+                },
+                {
+                    "name": "岚岚",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "岚岚"
+                        }
+                    }
+                },
+                {
+                    "name": "襄铃",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "襄铃"
+                        }
+                    }
+                },
+                {
+                    "name": "罗咤",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "罗咤"
+                        }
+                    }
+                },
+                {
+                    "name": "阳铃",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "阳铃"
+                        }
+                    }
+                },
+                {
+                    "name": "禺期",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "禺期"
+                        }
+                    }
+                },
+                {
+                    "name": "尚非乐",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "尚非乐"
+                        }
+                    }
+                },
+                {
+                    "name": "修",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "修"
+                        }
+                    }
+                },
+                {
+                    "name": "凤无梦",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "凤无梦"
+                        }
+                    }
+                },
+                {
+                    "name": "苏筱",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "苏筱"
+                        }
+                    }
+                },
+                {
+                    "name": "芙蕖",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "芙蕖"
+                        }
+                    }
+                },
+                {
+                    "name": "司危",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "司危"
+                        }
+                    }
+                },
+                {
+                    "name": "白鸟梓",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "白鸟梓"
+                        }
+                    }
+                },
+                {
+                    "name": "无咎",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "无咎"
+                        }
+                    }
+                },
+                {
+                    "name": "瓦卡莎",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "瓦卡莎"
+                        }
+                    }
+                },
+                {
+                    "name": "卡洛琳",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "卡洛琳"
+                        }
+                    }
+                },
+                {
+                    "name": "阿棘",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "阿棘"
+                        }
+                    }
+                },
+                {
+                    "name": "雪长夏",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "雪长夏"
+                        }
+                    }
+                },
+                {
+                    "name": "比戈尼娅",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "比戈尼娅"
+                        }
+                    }
+                },
+                {
+                    "name": "卯绒绒",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "卯绒绒"
+                        }
+                    }
+                },
+                {
+                    "name": "岑缨",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "岑缨"
+                        }
+                    }
+                },
+                {
+                    "name": "伊琅相思",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "伊琅相思"
+                        }
+                    }
+                },
+                {
+                    "name": "龙晴",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "龙晴"
+                        }
+                    }
+                },
+                {
+                    "name": "瞳",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "瞳"
+                        }
+                    }
+                },
+                {
+                    "name": "昊苍",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "昊苍"
+                        }
+                    }
+                },
+                {
+                    "name": "乐无异",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "乐无异"
+                        }
+                    }
+                },
+                {
+                    "name": "晴雪",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "晴雪"
+                        }
+                    }
+                },
+                {
+                    "name": "米达斯",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "米达斯"
+                        }
+                    }
+                },
+                {
+                    "name": "云无月",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "云无月"
+                        }
+                    }
+                },
+                {
+                    "name": "北洛",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "北洛"
+                        }
+                    }
+                },
+                {
+                    "name": "紫都",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "紫都"
+                        }
+                    }
+                },
+                {
+                    "name": "崔远之",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "崔远之"
+                        }
+                    }
+                },
+                {
+                    "name": "莫红袖",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "莫红袖"
+                        }
+                    }
+                },
+                {
+                    "name": "红玉",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "红玉"
+                        }
+                    }
+                },
+                {
+                    "name": "耶芙娜",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "耶芙娜"
+                        }
+                    }
+                },
+                {
+                    "name": "言雀",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "言雀"
+                        }
+                    }
+                },
+                {
+                    "name": "言御",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "言御"
+                        }
+                    }
+                },
+                {
+                    "name": "风晴雪",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "风晴雪"
+                        }
+                    }
+                },
+                {
+                    "name": "百里屠苏",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "百里屠苏"
+                        }
+                    }
+                },
+                {
+                    "name": "鸢",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "鸢"
+                        }
+                    }
+                },
+                {
+                    "name": "尤尼",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "尤尼"
+                        }
+                    }
+                },
+                {
+                    "name": "提提亚",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "提提亚"
+                        }
+                    }
+                },
+                {
+                    "name": "景",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "景"
+                        }
+                    }
+                },
+                {
+                    "name": "缇诗",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "缇诗"
+                        }
+                    }
+                },
+                {
+                    "name": "明月尘",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "明月尘"
+                        }
+                    }
+                },
+                {
+                    "name": "林",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "林"
+                        }
+                    }
+                },
+                {
+                    "name": "珑",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "珑"
+                        }
+                    }
+                }
+            ]
+        },
+        "升级技能": {
+            "cases": [
+                {
+                    "name": "一技能",
+                    "pipeline_override": {
+                        "同调者培养_升级技能_技能等级已满足": {
+                            "roi": [
+                                1080,
+                                80,
+                                55,
+                                55
+                            ]
+                        },
+                        "同调者培养_升级技能_技能等级未满足": {
+                            "roi": [
+                                1080,
+                                80,
+                                55,
+                                55
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "二技能",
+                    "pipeline_override": {
+                        "同调者培养_升级技能_技能等级已满足": {
+                            "roi": [
+                                1080,
+                                187,
+                                55,
+                                55
+                            ]
+                        },
+                        "同调者培养_升级技能_技能等级未满足": {
+                            "roi": [
+                                1080,
+                                187,
+                                55,
+                                55
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        "目标等级": {
+            "cases": [
+                {
+                    "name": "2",
+                    "pipeline_override": {
+                        "同调者培养_升级技能_技能等级已满足": {
+                            "expected": "01"
+                        },
+                        "同调者培养_升级技能_技能等级未满足": {
+                            "expected": "01"
+                        }
+                    }
+                },
+                {
+                    "name": "3",
+                    "pipeline_override": {
+                        "同调者培养_升级技能_技能等级已满足": {
+                            "expected": "01|02"
+                        },
+                        "同调者培养_升级技能_技能等级未满足": {
+                            "expected": "01|02"
+                        }
+                    }
+                },
+                {
+                    "name": "4",
+                    "pipeline_override": {
+                        "同调者培养_升级技能_技能等级已满足": {
+                            "expected": "01|02|03"
+                        },
+                        "同调者培养_升级技能_技能等级未满足": {
+                            "expected": "01|02|03"
+                        }
+                    }
+                },
+                {
+                    "name": "5",
+                    "pipeline_override": {
+                        "同调者培养_升级技能_技能等级已满足": {
+                            "expected": "01|02|03|04"
+                        },
+                        "同调者培养_升级技能_技能等级未满足": {
+                            "expected": "01|02|03|04"
+                        }
+                    }
+                },
+                {
+                    "name": "6",
+                    "pipeline_override": {
+                        "同调者培养_升级技能_技能等级已满足": {
+                            "expected": "01|02|03|04|05"
+                        },
+                        "同调者培养_升级技能_技能等级未满足": {
+                            "expected": "01|02|03|04|05"
+                        }
+                    }
+                },
+                {
+                    "name": "7",
+                    "pipeline_override": {
+                        "同调者培养_升级技能_技能等级已满足": {
+                            "expected": "01|02|03|04|05|06"
+                        },
+                        "同调者培养_升级技能_技能等级未满足": {
+                            "expected": "01|02|03|04|05|06"
+                        }
+                    }
+                },
+                {
+                    "name": "8",
+                    "pipeline_override": {
+                        "同调者培养_升级技能_技能等级已满足": {
+                            "expected": "01|02|03|04|05|06|07"
+                        },
+                        "同调者培养_升级技能_技能等级未满足": {
+                            "expected": "01|02|03|04|05|06|07"
+                        }
+                    }
+                },
+                {
+                    "name": "9",
+                    "pipeline_override": {
+                        "同调者培养_升级技能_技能等级已满足": {
+                            "expected": "01|02|03|04|05|06|07|08"
+                        },
+                        "同调者培养_升级技能_技能等级未满足": {
+                            "expected": "01|02|03|04|05|06|07|08"
+                        }
+                    }
+                },
+                {
+                    "name": "10",
+                    "pipeline_override": {
+                        "同调者培养_升级技能_技能等级已满足": {
+                            "expected": "01|02|03|04|05|06|07|08|09"
+                        },
+                        "同调者培养_升级技能_技能等级未满足": {
+                            "expected": "01|02|03|04|05|06|07|08|09"
+                        }
+                    }
+                },
+                {
+                    "name": "11",
+                    "pipeline_override": {
+                        "同调者培养_升级技能_技能等级已满足": {
+                            "expected": "01|02|03|04|05|06|07|08|09|10"
+                        },
+                        "同调者培养_升级技能_技能等级未满足": {
+                            "expected": "01|02|03|04|05|06|07|08|09|10"
+                        }
+                    }
+                }
+            ]
+        },
         "作战关卡": {
             "cases": [
                 {
