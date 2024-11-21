@@ -86,7 +86,9 @@
             "entry": "周常_拟合回归",
             "option": [
                 "队伍选择"
-            ]
+            ],
+            "repeatable": true,
+            "repeat_count": 1
         },
         {
             "name": "奖励-领取日常/周常任务奖励",
