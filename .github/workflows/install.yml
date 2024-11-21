@@ -75,16 +75,20 @@ jobs:
         uses: robinraju/release-downloader@v1
         with:
           repository: SweetSmellFox/MFAWPF
-          filename: MFAWPF*
+          fileName: MFAWPF*
           latest: true
-          out-file-path: "MFA"
+          out-file-path: MFA
           extract: true
 
       - name: Install
         shell: bash
         run: |
           python ./install.py ${{ needs.meta.outputs.tag }}
-          cp MFA/MFAWPF.exe install
+          cp ./MFA/MFAWPF.exe ./install
+          # url项示例  https://github.com/SweetSmellFox/MFAWPF
+          jq --arg version_name "MaaAshEchoes" --arg url ""https://github.com/moulai/MaaAshEchoes"" --arg version ${{ needs.meta.outputs.tag }} '. + {"name": $version_name, "url": $url,"version": $version}' ./assets/interface.json > ./install/interface.json
+          mv ./install/MFAWPF.exe ./install/MaaAshEchoes.exe
+          cp ./assets/resource/image/logo.ico ./install
 
       - uses: actions/upload-artifact@v4
         with:
