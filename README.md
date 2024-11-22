@@ -39,7 +39,7 @@ MaaAshEchoes，基于全新架构的 白荆回廊 小助手。图像技术 + 模
 - **福利-邮箱签收**：签收游戏邮件中的物品。
 - **关闭游戏**：退出游戏。
 
-还有想要的功能？欢迎在 [Issue](https://github.com/moulai/MaaAshEchoes/issues) 中提出建议！请在 issue 标题中以 `[功能建议]` 开头。
+还有想要的功能？欢迎在 [Issue](https://github.com/moulai/MaaAshEchoes/issues) 中提出建议或加 **QQ 群 865686593** 进行交流！请在 issue 标题中以 `[功能建议]` 开头。
 
 ![GUI界面展示](https://github.com/user-attachments/assets/a8a2c24d-30e1-4329-a943-5552fc39f9cd)
 
@@ -214,9 +214,9 @@ Linux 用户可以使用 `cron` 来定时运行 `MaaPiCli`。相关方法请自�
 
 ### 6. 无法找到问题的解决方案
 
-- 请附上以下信息提交 [Issue](https://github.com/moulai/MaaAshEchoes/issues)：  
-  **日志文件**：位于 `debug/maa.log`。  
-  **截图**：请包含任务出错时的界面截图和问题描述。
+请附上以下信息提交 [Issue](https://github.com/moulai/MaaAshEchoes/issues)，或加 QQ 群 865686593 提问：  
+- **日志文件**：位于 `debug/maa.log`。  
+- **截图**：请包含任务出错时的界面截图和问题描述。
 
 ## 已知问题
 
@@ -229,7 +229,9 @@ Linux 用户可以使用 `cron` 来定时运行 `MaaPiCli`。相关方法请自�
 
 ### 问题反馈
 
-如果在使用过程中遇到问题，欢迎提交 [Issue](https://github.com/moulai/MaaAshEchoes/issues)。反馈时请尽量提供以下信息：
+如果在使用过程中遇到问题，欢迎提交 [Issue](https://github.com/moulai/MaaAshEchoes/issues)，或加入 QQ 群 865686593 进行反馈。
+
+反馈时请尽量提供以下信息：
 
 - 日志文件（位于 `debug/maa.log`）。
 - 问题发生时的模拟器界面截图。
@@ -265,3 +267,7 @@ Linux 用户可以使用 `cron` 来定时运行 `MaaPiCli`。相关方法请自�
 <a href="https://github.com/moulai/MaaAshEchoes/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=moulai/MaaAshEchoes" />
 </a>
+
+## Join us
+
+闲聊/反馈/交流/开发群 QQ 群：865686593
