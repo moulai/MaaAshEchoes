@@ -41,6 +41,8 @@ MaaAshEchoes，基于全新架构的 白荆回廊 小助手。图像技术 + 模
 
 还有想要的功能？欢迎在 [Issue](https://github.com/moulai/MaaAshEchoes/issues) 中提出建议或加 **QQ 群 865686593** 进行交流！请在 issue 标题中以 `[功能建议]` 开头。
 
+**注意：请勿在各种白荆回廊官方动态下提到本软件/MAA等字眼，谢谢！**
+
 ![GUI界面展示](https://github.com/user-attachments/assets/a8a2c24d-30e1-4329-a943-5552fc39f9cd)
 
 ## 下载及安装说明
