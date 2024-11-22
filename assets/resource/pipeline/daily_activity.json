@@ -1,0 +1,322 @@
+{
+    "日常_活动日常任务": {
+        "next": "日常_活动日常任务_进入活动界面",
+        "interrupt": [
+            "通用_返回主界面"
+        ]
+    },
+    "日常_活动日常任务_进入活动界面": {
+        "recognition": "TemplateMatch",
+        "template": "活动/主界面_活动图标__1177_111_32_31__1127_61_132_131.png",
+        "roi": [
+            1127,
+            61,
+            132,
+            131
+        ],
+        "action": "Click",
+        "post_wait_freezes": 200,
+        "next": [
+            "日常_活动日常任务_进入祸运险途",
+            "日常_活动日常任务_进入活动界面"
+        ]
+    },
+    "日常_活动日常任务_进入祸运险途": {
+        "recognition": "OCR",
+        "expected": "险途",
+        "roi": [
+            1161,
+            218,
+            100,
+            46
+        ],
+        "action": "Click",
+        "next": "日常_活动日常任务_进入行动区域01"
+    },
+    "日常_活动日常任务_进入行动区域01": {
+        "recognition": "OCR",
+        "expected": "投递",
+        "roi": [
+            0,
+            247,
+            644,
+            33
+        ],
+        "action": "Click",
+        "next": "日常_活动日常任务_确定进入行动区域"
+    },
+    "日常_活动日常任务_确定进入行动区域": {
+        "recognition": "OCR",
+        "expected": "确定",
+        "roi": [
+            499,
+            553,
+            283,
+            51
+        ],
+        "action": "Click",
+        "next": "日常_活动日常任务_开始行动"
+    },
+    "日常_活动日常任务_开始行动": {
+        "recognition": "OCR",
+        "expected": "开始行动",
+        "roi": [
+            503,
+            457,
+            277,
+            53
+        ],
+        "action": "Click",
+        "post_wait_freezes": 2000,
+        "next": "日常_活动日常任务_行动Step1"
+    },
+    "日常_活动日常任务_行动Step1": {
+        "recognition": "TemplateMatch",
+        "template": "活动/活动特殊_黄色消息框__491_229_37_18__441_179_137_118.png",
+        "roi": [
+            441,
+            179,
+            137,
+            118
+        ],
+        "action": "Click",
+        "next": "日常_活动日常任务_行动Step1选择"
+    },
+    "日常_活动日常任务_行动Step1选择": {
+        "recognition": "OCR",
+        "expected": "收好",
+        "roi": [
+            311,
+            334,
+            656,
+            225
+        ],
+        "action": "Click",
+        "next": "日常_活动日常任务_行动Step1确认"
+    },
+    "日常_活动日常任务_行动Step1确认": {
+        "recognition": "OCR",
+        "expected": "确定",
+        "roi": [
+            502,
+            500,
+            278,
+            56
+        ],
+        "action": "Click",
+        "post_wait_freezes": 2000,
+        "next": "日常_活动日常任务_行动Step2"
+    },
+    "日常_活动日常任务_行动Step2": {
+        "recognition": "TemplateMatch",
+        "template": "活动\\活动特殊_黄色物资箱__435_232_33_22__385_182_133_122.png",
+        "roi": [
+            385,
+            182,
+            133,
+            122
+        ],
+        "action": "Click",
+        "next": "日常_活动日常任务_行动Step2确认"
+    },
+    "日常_活动日常任务_行动Step2确认": {
+        "recognition": "OCR",
+        "expected": "确定",
+        "roi": [
+            502,
+            500,
+            278,
+            56
+        ],
+        "action": "Click",
+        "post_wait_freezes": 2000,
+        "next": "日常_活动日常任务_行动Step3"
+    },
+    "日常_活动日常任务_行动Step3": {
+        "recognition": "TemplateMatch",
+        "template": "活动/活动特殊_黄色消息框__491_229_37_18__441_179_137_118.png",
+        "roi": [
+            327,
+            181,
+            134,
+            114
+        ],
+        "action": "Click",
+        "next": "日常_活动日常任务_行动Step3选择"
+    },
+    "日常_活动日常任务_行动Step3选择": {
+        "recognition": "OCR",
+        "expected": "前往",
+        "roi": [
+            297,
+            315,
+            669,
+            226
+        ],
+        "action": "Click",
+        "next": "日常_活动日常任务_行动Step3确认"
+    },
+    "日常_活动日常任务_行动Step3确认": {
+        "recognition": "OCR",
+        "expected": "确定",
+        "roi": [
+            502,
+            500,
+            278,
+            56
+        ],
+        "action": "Click",
+        "post_wait_freezes": 2000,
+        "next": "日常_活动日常任务_行动Step4"
+    },
+    "日常_活动日常任务_行动Step4": {
+        "recognition": "TemplateMatch",
+        "template": "活动\\活动特殊_黄色消息框__491_229_37_18__441_179_137_118.png",
+        "roi": [
+            269,
+            120,
+            135,
+            120
+        ],
+        "action": "Click",
+        "next": "日常_活动日常任务_行动Step4选择"
+    },
+    "日常_活动日常任务_行动Step4选择": {
+        "recognition": "OCR",
+        "expected": "前往",
+        "roi": [
+            297,
+            315,
+            669,
+            226
+        ],
+        "action": "Click",
+        "next": "日常_活动日常任务_行动Step4确认"
+    },
+    "日常_活动日常任务_行动Step4确认": {
+        "recognition": "OCR",
+        "expected": "确定",
+        "roi": [
+            502,
+            500,
+            278,
+            56
+        ],
+        "action": "Click",
+        "post_wait_freezes": 2000,
+        "next": "日常_活动日常任务_行动Step5"
+    },
+    "日常_活动日常任务_行动Step5": {
+        "recognition": "TemplateMatch",
+        "template": "活动\\活动特殊_目标点__207_232_28_24__157_182_128_124.png",
+        "roi": [
+            157,
+            182,
+            128,
+            124
+        ],
+        "action": "Click",
+        "next": "日常_活动日常任务_行动Step5选择"
+    },
+    "日常_活动日常任务_行动Step5选择": {
+        "recognition": "OCR",
+        "expected": "交付",
+        "roi": [
+            322,
+            322,
+            631,
+            200
+        ],
+        "action": "Click",
+        "next": "日常_活动日常任务_行动Step5确认"
+    },
+    "日常_活动日常任务_行动Step5确认": {
+        "recognition": "OCR",
+        "expected": "确定",
+        "roi": [
+            502,
+            500,
+            278,
+            56
+        ],
+        "action": "Click",
+        "post_wait_freezes": 2000,
+        "next": "日常_活动日常任务_行动结束"
+    },
+    "日常_活动日常任务_行动结束": {
+        "recognition": "OCR",
+        "expected": "开启",
+        "roi": [
+            322,
+            435,
+            631,
+            87
+        ],
+        "action": "Click",
+        "next": "日常_活动日常任务_行动结束返回"
+    },
+    "日常_活动日常任务_行动结束返回": {
+        "recognition": "OCR",
+        "expected": "返回",
+        "roi": [
+            19,
+            1,
+            130,
+            61
+        ],
+        "action": "Click",
+        "post_wait_freezes": 2000,
+        "next": "日常_活动日常任务_领取日常奖励"
+    },
+    "日常_活动日常任务_领取日常奖励": {
+        "recognition": "OCR",
+        "expected": "任务",
+        "roi": [
+            192,
+            454,
+            132,
+            65
+        ],
+        "action": "Click",
+        "next": "日常_活动日常任务_选择日常任务卡"
+    },
+    "日常_活动日常任务_选择日常任务卡": {
+        "recognition": "OCR",
+        "expected": "生存",
+        "roi": [
+            135,
+            134,
+            196,
+            416
+        ],
+        "action": "Click",
+        "next": [
+            "日常_活动日常任务_领取日常任务奖励",
+            "日常_活动日常任务_领取日常任务奖励已完成"
+        ]
+    },
+    "日常_活动日常任务_领取日常任务奖励": {
+        "recognition": "OCR",
+        "expected": "领取",
+        "roi": [
+            892,
+            514,
+            239,
+            78
+        ],
+        "action": "Click",
+        "next": "通用_返回主界面"
+    },
+    "日常_活动日常任务_领取日常任务奖励已完成": {
+        "recognition": "OCR",
+        "expected": "领取",
+        "roi": [
+            892,
+            514,
+            239,
+            78
+        ],
+        "inverse": true,
+        "next": "通用_返回主界面"
+    }
+}
