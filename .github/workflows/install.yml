@@ -90,6 +90,14 @@ jobs:
           mv ./install/MFAWPF.exe ./install/MaaAshEchoes.exe
           cp ./assets/resource/image/logo.ico ./install
 
+      # Step to build updater.exe if the architecture is x86_64 (Windows only)
+      - name: Build updater.exe
+        shell: bash
+        run: |
+          pip install pyinstaller
+          pip install -r ./updater/requirements.txt
+          pyinstaller -F --distpath ./install/ -i ./updater/updater.ico -n "updater" ./updater/updater.py -y
+      
       - uses: actions/upload-artifact@v4
         with:
           name: MaaAshEchoes-win-${{ matrix.arch }}
