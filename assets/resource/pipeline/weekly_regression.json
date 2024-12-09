@@ -75,7 +75,7 @@
     },
     "周常_拟合回归_开始战斗": {
         "recognition": "OCR",
-        "expected": "开始战斗",
+        "expected": "开始|战斗",
         "roi": [
             1055,
             580,
