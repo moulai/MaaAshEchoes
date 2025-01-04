@@ -1,0 +1,48 @@
+{
+    "漫巡_点击空白区域继续": {
+        "recognition": "OCR",
+        "expected": "空白",
+        "roi": [
+            446,
+            584,
+            379,
+            47
+        ],
+        "action": "Click"
+    },
+    "漫巡_点击退出漫巡": {
+        "recognition": "TemplateMatch",
+        "template": "漫巡/漫巡_退出漫巡按钮__61_22_45_39__11_0_145_111.png",
+        "roi": [
+            11,
+            0,
+            145,
+            111
+        ],
+        "action": "Click"
+    },
+    "漫巡_点击退出漫巡_放弃本次漫巡": {
+        "recognition": "OCR",
+        "expected": "放弃",
+        "roi": [
+            819,
+            384,
+            173,
+            44
+        ],
+        "action": "Click",
+        "next": "漫巡_点击退出漫巡_确认放弃"
+    },
+    "漫巡_点击退出漫巡_确认放弃": {
+        "recognition": "OCR",
+        "expected": "确|认",
+        "roi": [
+            735,
+            431,
+            128,
+            47
+        ],
+        "action": "Click",
+        "post_wait_freezes": 1000
+    }
+}
