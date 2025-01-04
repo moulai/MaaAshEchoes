@@ -6,6 +6,8 @@
             "type": "Adb"
         }
     ],
+    "default_controller": "adb",
+    "lock_controller": true,
     "resource": [
         {
             "name": "官服",
