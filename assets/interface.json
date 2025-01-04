@@ -901,6 +901,39 @@
                             "expected": "蚀"
                         }
                     }
+                },
+                {
+                    "name": "玄戈",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "玄戈"
+                        },
+                        "同调者培养_筛选同调者_选择属性": {
+                            "expected": "物理"
+                        }
+                    }
+                },
+                {
+                    "name": "余音",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "余音"
+                        },
+                        "同调者培养_筛选同调者_选择属性": {
+                            "expected": "水"
+                        }
+                    }
+                },
+                {
+                    "name": "十手卫",
+                    "pipeline_override": {
+                        "同调者培养_选择同调者": {
+                            "expected": "十手卫"
+                        },
+                        "同调者培养_筛选同调者_选择属性": {
+                            "expected": "风"
+                        }
+                    }
                 }
             ]
         },
