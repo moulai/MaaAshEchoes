@@ -67,12 +67,12 @@
     },
     "启动_领取活动奖励": {
         "recognition": "OCR",
-        "expected": "可领取",
+        "expected": "可领取|谢谢大厨|领取奖励",
         "roi": [
-            260,
-            500,
-            790,
-            55
+            65,
+            420,
+            1156,
+            186
         ],
         "index": -1,
         "action": "Click",
@@ -80,12 +80,12 @@
     },
     "启动_活动奖励领取完毕": {
         "recognition": "OCR",
-        "expected": "已领取",
+        "expected": "已领取|明日再来|前往",
         "roi": [
-            260,
-            500,
-            790,
-            55
+            65,
+            420,
+            1156,
+            186
         ],
         "action": "Click",
         "post_wait_freezes": 1000,
