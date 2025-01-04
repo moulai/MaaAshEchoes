@@ -37,10 +37,10 @@
         "recognition": "OCR",
         "expected": "有猫精选",
         "roi": [
-            215,
-            70,
-            600,
-            150
+            262,
+            121,
+            800,
+            49
         ],
         "action": "Click",
         "next": [

@@ -7,12 +7,12 @@
     },
     "奖励_日常周常_进入任务界面": {
         "recognition": "OCR",
-        "expected": "完成|任务",
+        "expected": "任务",
         "roi": [
-            800,
-            500,
-            250,
-            150
+            1003,
+            577,
+            53,
+            32
         ],
         "action": "Click",
         "post_wait_freezes": 100,
