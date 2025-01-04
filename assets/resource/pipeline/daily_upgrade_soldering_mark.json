@@ -1,0 +1,138 @@
+{
+    "日常_升级烙痕": {
+        "next": "日常_升级烙痕_进入记忆烙痕界面",
+        "interrupt": [
+            "通用_返回主界面"
+        ]
+    },
+    "日常_升级烙痕_进入记忆烙痕界面": {
+        "recognition": "OCR",
+        "expected": "记忆|烙痕",
+        "roi": [
+            370,
+            641,
+            139,
+            59
+        ],
+        "action": "Click",
+        "post_wait_freezes": 1000,
+        "next": "日常_升级烙痕_烙痕排序与筛选"
+    },
+    "日常_升级烙痕_烙痕排序与筛选": {
+        "recognition": "OCR",
+        "expected": "排序|筛选",
+        "roi": [
+            1113,
+            9,
+            152,
+            55
+        ],
+        "action": "Click",
+        "next": "日常_升级烙痕_恢复默认排序"
+    },
+    "日常_升级烙痕_恢复默认排序": {
+        "recognition": "OCR",
+        "expected": "恢复|默认",
+        "roi": [
+            437,
+            549,
+            182,
+            45
+        ],
+        "action": "Click",
+        "post_wait_freezes": 100,
+        "next": "日常_升级烙痕_确认恢复默认排序"
+    },
+    "日常_升级烙痕_确认恢复默认排序": {
+        "recognition": "OCR",
+        "expected": "确认设置",
+        "roi": [
+            729,
+            547,
+            149,
+            47
+        ],
+        "action": "Click",
+        "post_wait_freezes": 100,
+        "next": "日常_升级烙痕_等级倒序"
+    },
+    "日常_升级烙痕_等级倒序": {
+        "recognition": "OCR",
+        "expected": "等级",
+        "roi": [
+            713,
+            21,
+            82,
+            33
+        ],
+        "action": "Click",
+        "post_wait_freezes": 200,
+        "next": "日常_升级烙痕_选择烙痕"
+    },
+    "日常_升级烙痕_选择烙痕": {
+        "action": "Click",
+        "target": [
+            687,
+            207,
+            56,
+            55
+        ],
+        "post_wait_freezes": 100,
+        "next": "日常_升级烙痕_强化烙痕"
+    },
+    "日常_升级烙痕_强化烙痕": {
+        "recognition": "OCR",
+        "expected": "强化",
+        "roi": [
+            957,
+            638,
+            148,
+            54
+        ],
+        "action": "Click",
+        "post_wait_freezes": 200,
+        "next": [
+            "日常_升级烙痕_可以升级",
+            "日常_升级烙痕_不可以升级"
+        ]
+    },
+    "日常_升级烙痕_可以升级": {
+        "recognition": "TemplateMatch",
+        "template": "记忆烙痕/记忆烙痕_指定等级加一__929_426_41_38__879_376_141_138.png",
+        "roi": [
+            879,
+            376,
+            141,
+            138
+        ],
+        "action": "Click",
+        "next": "日常_升级烙痕_确认升级烙痕"
+    },
+    "日常_升级烙痕_不可以升级": {
+        "recognition": "TemplateMatch",
+        "template": "记忆烙痕/记忆烙痕_指定等级加一__929_426_41_38__879_376_141_138.png",
+        "roi": [
+            879,
+            376,
+            141,
+            138
+        ],
+        "inverse": true,
+        "next": "日常_升级烙痕_返回主界面"
+    },
+    "日常_升级烙痕_确认升级烙痕": {
+        "recognition": "OCR",
+        "expected": "确|认",
+        "roi": [
+            725,
+            552,
+            132,
+            47
+        ],
+        "action": "Click",
+        "next": "日常_升级烙痕_返回主界面"
+    },
+    "日常_升级烙痕_返回主界面": {
+        "next": "通用_返回主界面"
+    }
+}
