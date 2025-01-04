@@ -205,6 +205,26 @@ class Updater:
             self.logger.info(f"清理完成: {green(self.extract_folder_path)}")
         except Exception as e:
             self.logger.error(f"清理失败: {e}")
+
+        config_path = os.path.join(self.cover_folder_path, "config", "config.json")
+        backup_path = os.path.join(self.cover_folder_path, "config", "config.json.bak")
+
+        if os.path.exists(config_path):
+            try:
+                if os.path.exists(backup_path):
+                    os.remove(backup_path)
+
+                os.rename(config_path, backup_path)
+                self.logger.info(f"已将 {config_path} 重命名为 {backup_path}")
+
+                if os.path.exists(config_path):
+                    os.remove(config_path)
+                    self.logger.info(f"已删除 {config_path}")
+            except Exception as e:
+                self.logger.error(f"处理 config/config.json 失败: {e}")
+        else:
+            self.logger.info("config/config.json 不存在，跳过删除")
+
         self.logger.hr("完成", 2)
 
     def run(self):
