@@ -138,16 +138,16 @@
         ],
         "action": "Click",
         "post_wait_freezes": 1000,
-        "next": "外勤_任务完成"
+        "next": "外勤_任务完成或失败"
     },
-    "外勤_任务完成": {
+    "外勤_任务完成或失败": {
         "recognition": "OCR",
-        "expected": "任务完成",
+        "expected": "任务完成|任务失败",
         "roi": [
             125,
             30,
             300,
-            160
+            240
         ],
         "action": "Click",
         "target": [
