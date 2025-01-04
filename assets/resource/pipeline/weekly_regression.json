@@ -75,7 +75,7 @@
     },
     "周常_拟合回归_开始战斗": {
         "recognition": "OCR",
-        "expected": "开始|战斗",
+        "expected": "开始战斗",
         "roi": [
             1055,
             580,
@@ -84,6 +84,21 @@
         ],
         "pre_wait_freezes": 200,
         "action": "Click",
+        "next": "周常_拟合回归_确认开始战斗",
+        "interrupt": [
+            "周常_拟合回归_作战开始",
+            "周常_拟合回归_开始战斗"
+        ]
+    },
+    "周常_拟合回归_确认开始战斗": {
+        "recognition": "OCR",
+        "expected": "战术|终端",
+        "roi": [
+            13,
+            589,
+            202,
+            89
+        ],
         "next": "周常_拟合回归_作战完成",
         "timeout": 600000,
         "rate_limit": 3000
