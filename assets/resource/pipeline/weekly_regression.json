@@ -43,6 +43,7 @@
             140
         ],
         "action": "Click",
+        "post_wait_freezes": 200,
         "next": [
             "周常_拟合回归_选择队伍",
             "周常_拟合回归_作战开始"
