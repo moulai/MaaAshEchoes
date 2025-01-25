@@ -71,7 +71,7 @@
     },
     "启动_领取活动奖励": {
         "recognition": "OCR",
-        "expected": "可领取|谢谢大厨|领取奖励",
+        "expected": "可领取|谢谢大厨|领取奖励|点击领取",
         "roi": [
             65,
             420,
@@ -92,13 +92,13 @@
             186
         ],
         "action": "Click",
-        "post_wait_freezes": 1000,
-        "target_offset": [
-            0,
-            80,
-            0,
-            0
-        ]
+        "target": [
+            90,
+            600,
+            10,
+            10
+        ],
+        "post_wait_freezes": 1000
     },
     "启动_活动公告": {
         "recognition": "OCR",
