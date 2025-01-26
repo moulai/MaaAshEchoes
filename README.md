@@ -169,6 +169,7 @@ chmod a+x MaaPiCli
 
    - **茶憩角色设置（图片素材准备）**：  
      直接看图（注意图片素材的文件名里没有空格）：  
+     **如果找不到 GUI 中的“编辑任务”按钮，请先将`config/config.json`中的`EnableEdit`设置为`true`。**  
      ![茶憩角色选择说明](https://github.com/user-attachments/assets/91e01dba-a562-47a0-aa6e-003a8dbfa45b)
 
      详细说明：  
@@ -189,7 +190,8 @@ chmod a+x MaaPiCli
 
         - **GUI 自带截图工具**  
           使用方式：
-          - 点击 GUI 主界面任务列表上方的“修改任务”按钮（一个灰色的编辑图标）。
+          - 点击 GUI 主界面任务列表上方的“编辑任务”按钮（一个灰色的编辑图标）。
+          - 如果找不到 GUI 中的“编辑任务”按钮，请先将`config/config.json`中的`EnableEdit`设置为`true`。
           - 在任务编辑器右上角点击“裁剪图片”按钮（一个灰色的图片图标）。
           - 在弹出的图片浏览器中截图并保存。
         - [MFA ImageCropper](https://github.com/MaaXYZ/MaaFramework/tree/main/tools/ImageCropper)
