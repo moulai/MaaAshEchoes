@@ -49,13 +49,14 @@
         "interrupt": [
             "通用_点击屏幕继续",
             "启动_每日补给",
+            "启动_活动公告",
             "启动_领取活动奖励",
             "启动_活动奖励领取完毕",
-            "启动_活动公告",
             "启动_获得新徽章"
         ],
         "timeout": 180000,
-        "rate_limit": 3000
+        "rate_limit": 3000,
+        "on_error": "系统_重启游戏"
     },
     "启动_每日补给": {
         "recognition": "TemplateMatch",
@@ -67,7 +68,7 @@
             139
         ],
         "action": "Click",
-        "post_wait_freezes": 1000
+        "post_delay": 1000
     },
     "启动_领取活动奖励": {
         "recognition": "OCR",
@@ -80,7 +81,7 @@
         ],
         "index": -1,
         "action": "Click",
-        "post_wait_freezes": 1000
+        "post_delay": 1000
     },
     "启动_活动奖励领取完毕": {
         "recognition": "OCR",
@@ -98,7 +99,7 @@
             10,
             10
         ],
-        "post_wait_freezes": 1000
+        "post_delay": 1000
     },
     "启动_活动公告": {
         "recognition": "OCR",
