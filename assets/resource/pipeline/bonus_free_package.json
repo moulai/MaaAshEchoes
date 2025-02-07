@@ -76,10 +76,10 @@
         "recognition": "OCR",
         "expected": "购买",
         "roi": [
-            670,
-            370,
-            190,
-            140
+            614,
+            470,
+            300,
+            75
         ],
         "action": "Click",
         "next": "通用_返回主界面"
