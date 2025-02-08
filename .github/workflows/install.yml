@@ -86,7 +86,8 @@ jobs:
           python ./install.py ${{ needs.meta.outputs.tag }}
           cp ./MFA/MFAWPF.exe ./install
           # url项示例  https://github.com/SweetSmellFox/MFAWPF
-          jq --arg version_name "MaaAshEchoes" --arg url ""https://github.com/moulai/MaaAshEchoes"" --arg version ${{ needs.meta.outputs.tag }} '. + {"name": $version_name, "url": $url,"version": $version}' ./assets/interface.json > ./install/interface.json
+          # jq --arg version_name "MaaAshEchoes" --arg url ""https://github.com/moulai/MaaAshEchoes"" --arg version ${{ needs.meta.outputs.tag }} '. + {"name": $version_name, "url": $url,"version": $version}' ./assets/interface.json > ./install/interface.json
+          jq --arg version ${{ needs.meta.outputs.tag }} '. + {"version": $version}' ./assets/interface.json > ./install/interface.json
           mv ./install/MFAWPF.exe ./install/MaaAshEchoes.exe
           cp ./assets/resource/image/logo.ico ./install
 
